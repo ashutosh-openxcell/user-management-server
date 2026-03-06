@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Runtime/Environment
+.env
+.env.*
+.node_repl_history
+
+# IDE/System
+.vscode/
+.DS_Store
+Thumbs.db
