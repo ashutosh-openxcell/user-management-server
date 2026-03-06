@@ -13,7 +13,13 @@ const PORT = process.env.PORT || 8080;
 
 connectDB();
 
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ 
+  origin: [
+    "http://localhost:5173", 
+    "https://user-management-client-navy.vercel.app"
+  ], 
+  credentials: true 
+}));
 
 app.get('/', (req, res) => {
   res.send('YO!!! Hello World!');
